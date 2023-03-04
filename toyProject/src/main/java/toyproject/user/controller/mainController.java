@@ -9,6 +9,10 @@ public class mainController {
 
 	@GetMapping("/")
 	public String main(Model model) {
-		return "main";
+		return "user/main";
+	}
+	@GetMapping("/2")
+	public String main2(Model model) {
+		return "user/main2";
 	}
 }
