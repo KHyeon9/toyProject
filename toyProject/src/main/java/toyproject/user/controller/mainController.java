@@ -12,4 +12,10 @@ public class mainController {
 		model.addAttribute("title", "메인 화면");
 		return "user/main";
 	}
+	
+	@GetMapping("/login")
+	public String login(Model model) {
+		model.addAttribute("title", "로그인");
+		return "user/login/login";
+	}
 }
