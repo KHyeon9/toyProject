@@ -5,11 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class mainController {
-
-	@GetMapping("/")
+public class infoBoardController {
+	
+	@GetMapping("/infoBoard")
 	public String main(Model model) {
-		model.addAttribute("title", "메인 화면");
-		return "user/main";
+		model.addAttribute("title", "정보 게시판");
+		return "user/info/infoBoard";
 	}
 }
