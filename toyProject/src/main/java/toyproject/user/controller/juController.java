@@ -12,7 +12,7 @@ public class juController {
 
 	@GetMapping("/")
 	public String main(Model model) {
-		return "ju/juhyeonwoo";
+		return "ju/julogin";
 	}
 	
 }
